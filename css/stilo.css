@@ -1,0 +1,13 @@
+*{padding: 0px; margin:0px;}
+body{font-family: "Segoe ui"; background-color: #f1f1f1; }
+
+header{border-top: 10px solid black;}
+header > div{width: 900px; height: 100px; margin: 0 auto;}
+header > div > h2{font-family:"Open sans"; font-weight: 100; position: relative; top: 35px;}
+
+section {width: 880px; background-color: #E0E0DC; padding: 20px; margin: 0 auto; border-bottom:4px solid black;}
+label{width: 850px; display: block; font-size: 20px}
+input,select{width: 400px;  height: 30px; font-size: 20px; border-radius: 10px; padding-left: 20px; border: 0px; background-color: #f1f1f1; margin-left: 10px;}
+input:focus{border-radius: 10px;}
+
+button{width: 150px; height: 40px; margin-top: 20px;}

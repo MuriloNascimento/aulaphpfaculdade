@@ -14,6 +14,9 @@
 		echo $e;
 	}
 
+	$query = "select * from registro order by codigo_registro desc";
+	$resultado = mysql_query($query,$conecao);
+
 	mysql_close();
 
 ?>
@@ -30,8 +33,21 @@
 				<h2>Resultado</h2>
 			</div>
 		</header>
+		
+		<?php 
+
+			while ($linha = mysql_fetch_array($resultado)) {
+				
+				echo "<section> <div> $linha[nome] <br> $linha[cidade] <br> $linha[estado] <br> $linha[mensagem] <br> </div></section> <br>";
+			}
+
+		?>
+
 		<section>
-				<?php echo "<div> $nome <br> $cidade <br> $estado <br> $mensagem </div>";  ?>
+			<div>
+				<a href="index.php">Cadastrar registro</a>
+			</div>
 		</section>
+		
 	</body>
 </html>
